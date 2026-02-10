@@ -6,29 +6,25 @@ const STATS = [
     icon: TrendingUp,
     number: "100M+",
     label: "Developers",
-    description:
-      "Developers worldwide trust GitHub to build amazing things together",
+    description: "Developers worldwide trust GitHub to build amazing things together",
   },
   {
     icon: Code2,
     number: "330M+",
     label: "Repositories",
-    description:
-      "Public and private repositories hosting code in every programming language",
+    description: "Public and private repositories hosting code in every programming language",
   },
   {
     icon: Globe,
     number: "4M+",
     label: "Organizations",
-    description:
-      "Companies and teams of all sizes rely on GitHub for their development",
+    description: "Companies and teams of all sizes rely on GitHub for their development",
   },
   {
     icon: Shield,
     number: "90%",
     label: "Fortune 100",
-    description:
-      "Of Fortune 100 companies use GitHub to build and secure software",
+    description: "Of Fortune 100 companies use GitHub to build and secure software",
   },
 ] as const;
 
@@ -38,9 +34,8 @@ export default function Statistics() {
       <div className={styles.container}>
         <div className={styles.sectionHeader}>
           <h1 className={styles.sectionTitle}>GitHub by the numbers</h1>
-          <p className={styles.sectionDescription}>
-            The world&apos;s leading platform for software development
-          </p>
+          <h1 className={styles.sectionTitle}>THE NUMBERS MASON THE NUMBERSSSS</h1>
+          <p className={styles.sectionDescription}>The world&apos;s leading platform for software development</p>
         </div>
 
         <div className={styles.statsGrid}>
@@ -52,6 +47,7 @@ export default function Statistics() {
               <p className={styles.statDescription}>{stat.description}</p>
             </div>
           ))}
+          LALALILALALA
         </div>
       </div>
     </section>
