@@ -1,0 +1,126 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.page {
+  padding: var(--space-9) 0;
+  background: linear-gradient(
+    to bottom,
+    var(--color-accent-2),
+    var(--color-neutral-2)
+  );
+}
+
+.ctaContent {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.ctaTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+  color: var(--color-neutral-12);
+}
+
+.ctaDescription {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  color: var(--color-neutral-11);
+  margin-bottom: var(--space-6);
+}
+
+.ctaActions {
+  display: flex;
+  justify-content: center;
+}
+
+.primaryButton {
+  background-color: var(--color-accent-9);
+  color: var(--color-accent-contrast);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  transition: background-color 0.2s ease;
+}
+
+.primaryButton:hover {
+  background-color: var(--color-accent-10);
+}
+
+/* Resources Section */
+.resourcesSection {
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--color-neutral-6);
+}
+
+.resourcesTitle {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: var(--space-6);
+  color: var(--color-neutral-12);
+}
+
+.resourcesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-5);
+}
+
+.resourceLink {
+  display: block;
+  padding: var(--space-5);
+  background-color: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-3);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.resourceLink:hover {
+  border-color: var(--color-secondary-7);
+  background-color: var(--color-secondary-2);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+}
+
+.resourceLinkContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+}
+
+.resourceLinkTitle {
+  font-family: var(--font-subheading);
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--color-neutral-12);
+}
+
+.resourceLink:hover .resourceLinkTitle {
+  color: var(--color-secondary-11);
+}
+
+.resourceLinkContent svg {
+  color: var(--color-neutral-9);
+  transition: transform 0.2s ease;
+}
+
+.resourceLink:hover .resourceLinkContent svg {
+  transform: translateX(4px);
+  color: var(--color-secondary-9);
+}
+
+.resourceLinkDescription {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-neutral-11);
+  margin: 0;
+}

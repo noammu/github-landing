@@ -1,0 +1,129 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-neutral-1);
+  border-bottom: 1px solid var(--color-neutral-6);
+  backdrop-filter: blur(12px);
+}
+
+.headerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+  color: var(--color-neutral-12);
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.logo:hover {
+  color: var(--color-accent-11);
+}
+
+.logoIcon {
+  color: var(--color-accent-9);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.navLink {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: var(--color-neutral-11);
+  text-decoration: none;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-3);
+  transition: all 0.2s ease;
+}
+
+.navLink:hover {
+  color: var(--color-neutral-12);
+  background-color: var(--color-neutral-3);
+}
+
+.navLink.active {
+  color: var(--color-accent-11);
+  background-color: var(--color-accent-3);
+  font-weight: 500;
+}
+
+.signUpButton {
+  background-color: var(--color-accent-9);
+  color: var(--color-accent-contrast);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-left: var(--space-3);
+  transition: background-color 0.2s ease;
+}
+
+.signUpButton:hover {
+  background-color: var(--color-accent-10);
+}
+
+.mobileMenuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-neutral-11);
+  cursor: pointer;
+  padding: var(--space-2);
+  border-radius: var(--radius-2);
+  transition: all 0.2s ease;
+}
+
+.mobileMenuButton:hover {
+  color: var(--color-neutral-12);
+  background-color: var(--color-neutral-3);
+}
+
+.mobileNav {
+  display: none;
+  flex-direction: column;
+  padding: var(--space-4) var(--space-6);
+  border-top: 1px solid var(--color-neutral-6);
+  background-color: var(--color-neutral-1);
+}
+
+.mobileNav .navLink {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-3);
+}
+
+.mobileNav .signUpButton {
+  margin-left: 0;
+  margin-top: var(--space-3);
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .mobileMenuButton {
+    display: flex;
+  }
+
+  .mobileNav.open {
+    display: flex;
+  }
+}

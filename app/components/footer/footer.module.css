@@ -1,0 +1,31 @@
+.footer {
+  padding: var(--space-7) 0;
+  background-color: var(--color-neutral-2);
+  border-top: 1px solid var(--color-neutral-6);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.footerText {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  text-align: center;
+  color: var(--color-neutral-11);
+  margin: 0;
+}
+
+.footerText a {
+  color: var(--color-accent-11);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footerText a:hover {
+  color: var(--color-accent-9);
+  text-decoration: underline;
+}
