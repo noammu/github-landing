@@ -37,7 +37,7 @@ export default function Statistics() {
           <h1 className={styles.sectionTitle}>THE NUMBERS MASON THE NUMBERSSSS</h1>
           <p className={styles.sectionDescription}>The world&apos;s leading platform for software development</p>
         </div>
-
+        ANOTHA CHANGEEEEEE @$^%*^89678976436236!#$#%*&%^*
         <div className={styles.statsGrid}>
           {STATS.map((stat) => (
             <div key={stat.label} className={styles.statCard}>
