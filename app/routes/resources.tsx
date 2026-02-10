@@ -31,17 +31,13 @@ export default function Resources() {
       <div className={styles.container}>
         <div className={styles.ctaContent}>
           <h1 className={styles.ctaTitle}>Ready to get started?</h1>
+          <h1 className={styles.ctaTitle}>This should be restorable</h1>
           <p className={styles.ctaDescription}>
-            Join millions of developers and start building on the world&apos;s
-            leading platform
+            Join millions of developers and start building on the world&apos;s leading platform
           </p>
           <div className={styles.ctaActions}>
             <Button asChild size="lg" className={styles.primaryButton}>
-              <a
-                href="https://github.com/signup"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://github.com/signup" target="_blank" rel="noopener noreferrer">
                 Create your free account
                 <ArrowRight size={20} />
               </a>
@@ -61,14 +57,10 @@ export default function Resources() {
                 className={styles.resourceLink}
               >
                 <div className={styles.resourceLinkContent}>
-                  <span className={styles.resourceLinkTitle}>
-                    {resource.title}
-                  </span>
+                  <span className={styles.resourceLinkTitle}>{resource.title}</span>
                   <ArrowRight size={16} />
                 </div>
-                <p className={styles.resourceLinkDescription}>
-                  {resource.description}
-                </p>
+                <p className={styles.resourceLinkDescription}>{resource.description}</p>
               </a>
             ))}
           </div>
