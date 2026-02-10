@@ -31,6 +31,7 @@ export default function Benefits() {
           <h1 className={styles.sectionTitle}>Why developers choose GitHub</h1>
           <p className={styles.sectionDescription}>The tools and community that accelerate software development</p>
         </div>
+        <p className={styles.tagline}>Join millions of developers building the future</p>
         <div className={styles.benefitsGrid}>
           {BENEFIT_GROUPS.map((group) => (
             <div key={group.title} className={styles.benefitCard}>
