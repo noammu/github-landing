@@ -43,6 +43,7 @@ export default function Benefits() {
             </div>
           ))}
         </div>
+        <p className={styles.tagline}>Join millions of developers building the future</p>
       </div>
     </section>
   );
